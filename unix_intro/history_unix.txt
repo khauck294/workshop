@@ -1,0 +1,156 @@
+    1  cd ~/Desktop/workshop/unix_intro
+    2  head exmaple.txt
+    3  head example.txt
+    4  head -n 5 example.txt
+    5  man -help
+    6  man --help
+    7  man head
+    8  head --help
+    9  pwd
+   10  head example.txt
+   11  head notes.txt
+   12  head/experiment/notes.txt
+   13  head experiment/notes.txt
+   14  head example.txt 
+   15  head example.txt 
+   16  ls
+   17  cd experiment/
+   18  ls
+   19  pwd
+   20  head notes.txt 
+   21  pdw
+   22  pwd
+   23  cd..
+   24  cd ..
+   25  pwd
+   26  tail example.txt 
+   27  less example.txt 
+   28  wc example.txt 
+   29  wc -l example.txt
+   30  cp example.txt example_copy.txt
+   31  ls
+   32  ls data
+   33  cp example.txt data/example_2.txt
+   34  ls data
+   35  mv example_copy.txt experiment/
+   36  ls
+   37  ls experiment
+   38  rm example_copy.txt
+   39  pwd
+   40  rm experiment/example_copy.txt 
+   41  GNU nano 3.1
+   42  nan
+   43  nano
+   44  nano
+   45  nano sample_names.txt
+   46  ls
+   47  nano
+   48  ls
+   49  nano
+   50  head sample_names
+   51  mkdir subset
+   52  ls
+   53  rmdir subset/
+   54  ls
+   55  rmdir experiment/
+   56  cp -r experiment/ experiment_copy
+   57  ls
+   58  rmdir experiment_copy
+   59  rmdir -r experiment_copy
+   60  rm -r experiment_copy/
+   61  ls
+   62  .
+   63  mv sample_names.txt sample_names_2.txt
+   64  ls
+   65  mv sample_names samplenames_2.txt
+   66  ls
+   67  wc -l example.txt
+   68  ls | wc -l
+   69  data
+   70  ls data/
+   71  ls data/all_samples/
+   72  ls data/all_samples/ | wc -l
+   73  ls
+   74  ls > directory_contents.txt
+   75  ls
+   76  head directory_contents.txt 
+   77  ls experiment/ > directory_contents.txt 
+   78  head directory_contents.txt 
+   79  ls  >> directory_contents.txt 
+   80  head directory_contents.txt 
+   81  cd data/all_samples/
+   82  ls
+   83  ls *.txt
+   84  ls *.txt | wc -l
+   85  ls *.fq
+   86  ls *.fs | wc -l
+   87  *.fq | wc -1
+   88  *.fq | wc -l
+   89  ls *.fq | wc -l
+   90  ls *.txt | wc -l
+   91  ls *.tsv | wc -1
+   92  ls *.tsv | wc -l
+   93  mkdir fastq_files
+   94  ls fastq_files/
+   95  ls *.fq
+   96  mv *.fq fastq_files/
+   97  ls fastq_files/
+   98  ./
+   99  pwd
+  100  ls | wc -l
+  101  history
+  102  history | tail
+  103  cd fastq_files/
+  104  pwd
+  105  ls
+  106  ls sample_1*.fq
+  107  ls sample_1?.fq
+  108  cd ..
+  109  pwd
+  110  cd ..
+  111  pwd
+  112  cd ..
+  113  pwd
+  114  cd six_commands/
+  115  ls
+  116  head gene_annotations.tsv
+  117  head -n 1 gene_annotations.tsv
+  118  wc -l gene_annotations.tsv
+  119  cut -f 1 gene_annotations.tsv
+  120  head gene_annotations.tsv
+  121  cut -f 1 gene_annotations.tsv | head
+  122  cut -f 1-3 gene_annotations.tsv | head
+  123  head colors.txt
+  124  grep blue colors.txt
+  125  grep purple colors.txt
+  126  grep re colors.txt
+  127  grep K09765 gene_annotations.tsv
+  128  grep K18979 gene_annotations.tsv
+  129  head colores.txt
+  130  grep indigo colores.txt
+  131  grep indigo *.txt
+  132  my_var=ANGUS
+  133  echo kate
+  134  echo my_var
+  135  echo $my_var
+  136  cd ..
+  137  cd ..
+  138  pwd
+  139  for item in earth mars venus ; do echo $item; done
+  140  for item in earth mars venus ; do echo $item; done
+  141  for item in earth mars venus ; do echo $item; done
+  142  for item in earth mars venus; do echo $item; echo $item > planets.txt; done
+  143  head planets.txt
+  144  for item in earth mars venus; do echo $item; echo $item >> planets.txt; done
+  145  head planets.txt
+  146  cat planets.txt
+  147  for item in $(cat planets.txt); do  echo $item; done
+  148  ls
+  149  for object in $(head directory_contents.txt); do echo $object; done
+  150  ls
+  151  cd ..
+  152  cd ~/Desktop/workshop/unix_intro
+  153  ls
+  154  for object in $(head directory_contents.txt); do echo $object; done
+  155  history
+  156  history > history_unix.txt
